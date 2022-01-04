@@ -552,6 +552,7 @@ function Kavo.CreateLib(kavName, themeList)
             sectionElListing.Parent = sectionInners
             sectionElListing.SortOrder = Enum.SortOrder.LayoutOrder
             sectionElListing.Padding = UDim.new(0, 3)
+
             
         coroutine.wrap(function()
             while wait() do
