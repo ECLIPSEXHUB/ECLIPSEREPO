@@ -552,7 +552,12 @@ function Kavo.CreateLib(kavName, themeList)
             sectionElListing.Parent = sectionInners
             sectionElListing.SortOrder = Enum.SortOrder.LayoutOrder
             sectionElListing.Padding = UDim.new(0, 3)
-
+            
+	    function Kavo:refreshsection()
+	    for i,v in pairs(sectionInners:GetChildren()) do
+	    v:Destroy
+	    end
+	    end
             
         coroutine.wrap(function()
             while wait() do
