@@ -692,7 +692,7 @@ function Kavo.CreateLib(kavName, themeList)
 
                 btn.MouseButton1Click:Connect(function()
                     if not focusing then
-                        callback()
+                        callback(buttonElement.Name)
                         local c = sample:Clone()
                         c.Parent = btn
                         local x, y = (ms.X - c.AbsolutePosition.X), (ms.Y - c.AbsolutePosition.Y)
